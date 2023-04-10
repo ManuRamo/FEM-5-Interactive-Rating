@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background: radial-gradient(
+        circle at center top,
+        hsl(213, 19%, 18%),
+        hsl(216, 12%, 10%)
+    );
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.star {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.text {
+    text-align: left;
+}
+
+.text h1 {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.text p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.rating button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.rating button:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+.rating button:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.submit {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    outline: none;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.submit:focus {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+@media (max-width: 300px) {
+    .container {
+        max-height: 600px;
+    }
+
+    .rating button {
+        width: 30px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+}
+
+.center > * {
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+.rated {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    width: min(300px, 70%);
+    align-self: center;
+}
+
+.rated h2 {
+    font-size: 1rem;
+}
+
+.text-2 p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 0 2px 0 2px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 330px) {
+    .rated h2 {
+        font-size: 0.8rem;
+    }
+
+    .text-2 p {
+        font-size: 0.7rem;
+    }
+}
